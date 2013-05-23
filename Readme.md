@@ -10,7 +10,7 @@ Output your Java logs in [Bunyan](https://github.com/trentm/node-bunyan) format 
 		<dependency>
 			<groupId>com.aldaviva.bunyan4log4j</groupId>
 			<artifactId>bunyan4log4j</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependency>
 	```
