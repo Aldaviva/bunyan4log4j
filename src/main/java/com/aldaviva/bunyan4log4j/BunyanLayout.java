@@ -8,7 +8,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
-
 import org.apache.log4j.Layout;
 import org.apache.log4j.spi.LocationInfo;
 import org.apache.log4j.spi.LoggingEvent;
@@ -51,7 +50,7 @@ public class BunyanLayout extends Layout {
 		record.put("pid", pid);
 		record.put("v", BUNYAN_FORMAT_VERSION);
 		record.put("level", BunyanLevels.getBunyanLevel(event.getLevel()));
-		record.put("msg", event.getMessage().toString()); //maybe stringify this
+		record.put("msg", event.getMessage());
 		record.put("time", getDateString());
 		if(src){
 			final LocationInfo locationInfo = event.getLocationInformation();
